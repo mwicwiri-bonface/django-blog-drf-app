@@ -1,4 +1,4 @@
-# A BLOG WEBSITE USING Django, DRF AND REACT
+# A BLOG WEBSITE USING Django, DRF
 
 ## Step 1 Django configuration
 installing dependencies and migrating database
