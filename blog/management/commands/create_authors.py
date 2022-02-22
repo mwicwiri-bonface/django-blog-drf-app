@@ -20,7 +20,7 @@ class Command(BaseCommand):
                    'Mwicwiri', 'Otieno', 'Kirimi', 'Macharia', 'Kendi']
         User = get_user_model()
         authors = options['authors'] if options['authors'] else 1000
-        created_authors = 0
+        created_authors = User.objects.all().count()
         while created_authors < authors:
             username = "-".join((random.choice(surname), generate_key(6, 6)))
             if not User.objects.filter(username=username).exists():

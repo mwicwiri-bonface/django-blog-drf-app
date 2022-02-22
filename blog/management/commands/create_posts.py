@@ -33,7 +33,7 @@ class Command(BaseCommand):
         authors = User.objects.all()
         categories = Category.objects.all()
         status = ['draft', 'published']
-        created_posts = 0
+        created_posts = Post.objects.all().count()
         posts = options['posts'] if options['posts'] else 1000
         while created_posts < posts:
             dt = pytz.utc.localize(datetime.now() - timedelta(days=random.randint(0, 1825)))
