@@ -1,4 +1,4 @@
-# A BLOG WEBSITE USING Django, DRF
+# A Blog Website using Django, DRF
 
 ## Step 1 Django configuration
 installing dependencies and migrating database
