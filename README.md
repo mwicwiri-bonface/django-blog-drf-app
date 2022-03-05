@@ -25,7 +25,12 @@ python manage.py create_categories --categories=20 --settings=core.settings.deve
 python manage.py create_posts --posts=300 --settings=core.settings.development  
 ```
 
-## Step 1.4 For running tsts
+## Step 1.4 For running tests
 ```commandline
 python manage.py test --settings=core.settings.development
+```
+
+## Step 1.5 For running project
+```commandline
+python manage.py runserver --settings=core.settings.development
 ```
