@@ -2,7 +2,7 @@
 
 ## Step 1.1 Create a settings.ini
 create a settings.ini file in core directory add the following
-```
+```ini
 [settings]
 DEBUG=True
 SECRET_KEY=SOMEKEY
