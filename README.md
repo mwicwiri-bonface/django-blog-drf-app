@@ -1,6 +1,13 @@
 # A Blog Website using Django, DRF
 
-## Step 1 Django configuration
+## Step 1.1 Create a settings.ini
+create a settings.ini file in core directory add the following
+```
+[settings]
+DEBUG=True
+SECRET_KEY=SOMEKEY
+```
+## Step 1.2 Django configuration
 installing dependencies and migrating database
 ```commandline
 pip install -r requirements.txt
@@ -10,13 +17,6 @@ python manage.py makemigrations --settings=core.settings.development
 python manage.py migrate --settings=core.settings.development
 ```
 
-## Step 1.2 Create a settings.ini
-create a settings.ini file in core directory add the following
-```
-[settings]
-DEBUG=True
-SECRET_KEY=SOMEKEY
-```
 ## Step 1.3 Populating database
 run following commands in the given order below
 ```commandline
