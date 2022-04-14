@@ -12,25 +12,25 @@ installing dependencies and migrating database
 ```commandline
 pip install -r requirements.txt
 
-python manage.py makemigrations --settings=core.settings.development
+python manage.py makemigrations
 
-python manage.py migrate --settings=core.settings.development
+python manage.py migrate
 ```
 
 ## Step 1.3 Populating database
 run following commands in the given order below
 ```commandline
-python manage.py create_authors --authors=200 --settings=core.settings.development  
-python manage.py create_categories --categories=20 --settings=core.settings.development  
-python manage.py create_posts --posts=300 --settings=core.settings.development  
+python manage.py create_authors --authors=200
+python manage.py create_categories --categories=20
+python manage.py create_posts --posts=300
 ```
 
 ## Step 1.4 For running tests
 ```commandline
-python manage.py test --settings=core.settings.development
+python manage.py test
 ```
 
 ## Step 1.5 For running project
 ```commandline
-python manage.py runserver --settings=core.settings.development
+python manage.py runserver
 ```
