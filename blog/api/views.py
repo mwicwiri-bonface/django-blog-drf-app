@@ -10,5 +10,9 @@ class PostListCrete(ListCreateAPIView):
 
 
 class PostRetrieveDestroy(RetrieveDestroyAPIView):
+    """
+    get: Endpoint for getting post details
+    delete: endpoint for deleting a post
+    """
     queryset = Post.objects.all().select_related('category', 'author').order_by('-created')
     serializer_class = PostSerializer
